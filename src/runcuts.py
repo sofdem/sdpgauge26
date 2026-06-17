@@ -239,7 +239,7 @@ if __name__ == "__main__":
     # name = "030-100-1"
     # testinst(si.boxqpnew(name), name, modes=modes, maxit=-1, maxcpu=-2, eigtol=1e-4, graphics=1)
 
-    modes = ["LP-EIG-0", "SOC-FROB-S"]
+    modes = ["SOC-EIG-0"]
     testbench("SPCA_large_K=10", modes=modes, maxit=-1, maxcpu=1800, eigtol=1e-6, graphics=2)
     # testbench("BOXQP_largest_3", modes=modes, maxit=-1, maxcpu=1800, eigtol=1e-6, graphics=2)
     # testbench("BOXQP_smallest", modes=modes, maxit=-1, maxcpu=60, eigtol=1e-6, graphics=2)

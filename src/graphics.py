@@ -233,8 +233,8 @@ def printgclatex4(best, modes, t, digit=1):
 
 if __name__ == "__main__":
 
-    modes = ("LP-EIG-1", "LP-EIG-0", "LP-FROB-0", "LP-FROB-S", "SOC-EIG-1", "SOC-FROB-0", "SOC-FROB-S")
-    printgclatex4(lbathalftimesdp(Path(OUTDIR / "spca_large_k=10_260526"), limittime=60, withsdp=False), modes, 60)
+    modes = ("LP-EIG-1", "LP-EIG-0", "LP-FROB-0", "LP-FROB-S", "SOC-EIG-1", "SOC-EIG-0", "SOC-FROB-0", "SOC-FROB-S")
+    printgclatex4(lbathalftimesdp(Path(OUTDIR / "spca_large_k=10_260526"), limittime=1800, withsdp=False), modes, 1800)
 
     # modes = ("LP-EIG-1", "LP-EIG-0", "LP-FROB-0", "LP-FROB-S", "SOC-EIG-1", "SOC-EIG-0", "SOC-FROB-0", "SOC-FROB-S")
     # printgclatex4(lbathalftimesdp(Path("OUTDIR / "spca_small_k=10_260504-1117"), limittime=-2, withsdp=True), modes, -2)
